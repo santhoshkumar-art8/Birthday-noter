@@ -13,22 +13,41 @@ function App() {
     });
     setitem("");
   }
+
+  function deleteone(id){
+    setarrcode((prev)=>{
+     return prev.filter((eachitem,index)=>{
+return index!==id;
+      });
+    });
+  }
+
+  function handleclick(){
+    deleteone(0);
+  }
   return (
     <div className="container">
       <div className="heading">
-        <h1>Birthday-noter</h1>
+        <h1>Inshort-hints</h1>
       </div>
       <div className="form">
-        <input onChange={itemfun} value={item} type="text" />
-        <button onClick={fullfun}>
+      <button id="btn" onClick={handleclick}>
+          <span>minus</span>
+        </button>
+        <button id="addbtn" onClick={fullfun}>
           <span>Add</span>
         </button>
+        <input onChange={itemfun} value={item} type="text" />
+        
+       
       </div>
       <div>
         <ul>
-          {arrcode.map((eachitem) => (
-            <li>{eachitem}</li>
-          ))}
+         {arrcode.map(function(eachitem){
+           return(
+<li>{eachitem}</li>
+           );
+         })}
         </ul>
       </div>
       <p>2021 @ santhosh kumar</p>;

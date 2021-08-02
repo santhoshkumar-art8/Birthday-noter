@@ -63,6 +63,7 @@ body {
     padding-bottom: 3px;
     border-radius: 5px;
     background-color: #ffeaa7;
+    float: right;
   }
   button span {
     background: #f1f5f8;
@@ -81,5 +82,14 @@ body {
   p {
     opacity: 0.5;
     margin-top: 240px;
+  }
+
+  #btn{
+    float: left;
+    margin-bottom: 10px;
+  }
+
+  #addbtn{
+    margin-bottom: 10px;
   }
   
