@@ -1,8 +1,11 @@
 import React, { useState } from "react";
-
+import Icon,{Minusicon} from "./icon";
+import ShortTextRoundedIcon from '@material-ui/icons/ShortTextRounded';
 function App() {
+  
   let [item, setitem] = useState("");
   let [arrcode, setarrcode] = useState([]);
+  
   function itemfun(event) {
     let a = event.target.value;
     setitem(a);
@@ -26,18 +29,20 @@ return index!==id;
     deleteone(0);
   }
   return (
+    
     <div className="container">
       <div className="heading">
-        <h1>Inshort-hints</h1>
+        <h1>
+        <ShortTextRoundedIcon /> Inshort-hints</h1>
       </div>
       <div className="form">
       <button id="btn" onClick={handleclick}>
-          <span>minus</span>
+          <span><Minusicon/></span>
         </button>
         <button id="addbtn" onClick={fullfun}>
-          <span>Add</span>
+          <span><Icon /></span>
         </button>
-        <input onChange={itemfun} value={item} type="text" />
+        <input onChange={itemfun} value={item} type="text" required="" />
         
        
       </div>
@@ -52,6 +57,8 @@ return index!==id;
       </div>
       <p>2021 @ santhosh kumar</p>;
     </div>
+    
+    
   );
 }
 

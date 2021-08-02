@@ -1,5 +1,5 @@
 body {
-    background-color: #ffeaa7;
+    background-color:#ffeaa7;
     min-height: 70vh;
     padding: 1rem;
     box-sizing: border-box;
@@ -10,6 +10,7 @@ body {
     font-family: "Architects Daughter", cursive;
     text-align: center;
     font-size: 130%;
+    background-image: url("https://www.transparenttextures.com/patterns/cubes.png");
   }
   
   .container {
@@ -68,9 +69,10 @@ body {
   button span {
     background: #f1f5f8;
     display: block;
-    padding: 0.5rem 1rem;
-    border-radius: 5px;
-    border: 2px solid hsl(198, 1%, 29%);
+    /* padding: 0.5rem 1rem;
+    border-radius: 5px; */
+    /* border: 2px solid hsl(198, 1%, 29%); */
+    
   }
   
   li {
